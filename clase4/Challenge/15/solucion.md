@@ -10,33 +10,40 @@ la instalacion de docker de la siguiente manera
 
 ## Creacion del Dockerfile 
 
-Vamos a crea un directorio llamado imagen almacenar nuestro archivo Dockerfile
++ Vamos a crea un directorio llamado imagen almacenar nuestro archivo Dockerfile
+
 mkdir imagen
 
-Ingresamos al directorio creado.
++ Ingresamos al directorio creado.
+
 cd imagen
 
-Creamos un archivo llamado Dockerfile
++ Creamos un archivo llamado Dockerfile
+
 touch Dockerfile
 
-y escribimos el contenido del Dockerfile
++ escribimos el contenido del Dockerfile
 
 FROM httpd:latest
+
 COPY ./buscaminas/ /usr/local/apache2/htdocs/
 
-Previamente habiamos clonado el sitio web de buscaminas desde github a la instancia EC2
-con git clone REPO
++ Previamente habiamos clonado el sitio web de buscaminas desde github a la instancia EC2
+con: 
 
-construimos la imagen de la siguiente manera 
+git clone REPO
+
++ construimos la imagen de la siguiente manera 
 
 docker build -t httpd:ciberdevops .
 
 [![eliminardocker1.png](https://i.postimg.cc/5ytDHs9x/eliminardocker1.png)](https://postimg.cc/LYrxwBZ7)
 
-Ahora vamos a utilizar dicha imagen para lanzar nuestro contenedor httpd
++ Ahora vamos a utilizar dicha imagen para lanzar nuestro contenedor httpd
+
 docker run -dit --name buscaminas -p 8080:80 httpd:ciberdevops
 
-es importante tener en cuenta que debemos configurar el security group de la instancia EC2, para que permita trafico, a nuestra propia ip publica o a todo el mundo (0.0.0.0/0)
++ es importante tener en cuenta que debemos configurar el security group de la instancia EC2, para que permita trafico, a nuestra propia ip publica o a todo el mundo (0.0.0.0/0)
 
 ## verificamos el sitio web por el puerto publicado
 
