@@ -1,11 +1,13 @@
 - Documentación
 
-Para desarrollar este proyecto debemos partir del desarrollo el cual esta basado en html, javascript y css.
+Para desarrollar este proyecto se desplego una instancia de EC2 tipo amazon linux t2.micro en la cual, se realizo 
+la instalacion de docker de la siguiente manera
 
-Para el desarrollo de este proyecto utilizamos los siguientes servicios tipo serveless de aws
+https://carbon.now.sh/?bg=rgba%2528171%252C+184%252C+195%252C+1%2529&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%2525&si=false&es=2x&wm=false&code=%252523Actualizacion%252520de%252520paqueres%25250Asudo%252520yum%252520update%252520-y%252520%25250A%25250A%252523Instalacion%252520de%252520docker%252520en%252520instancia%252520EC2%25250Asudo%252520yum%252520install%252520docker%252520-y%25250A%25250A%252523Iniciar%252520servicio%252520docker%25250Asudo%252520service%252520docker%252520start%25250A%25250A%252523Comprobacion%252520de%252520instalacion%252520de%252520docker%25250Adocker%252520--version
 
-Aws Fargate: servicio tipo serveless para ejectuar contenedores en ECS (Elastic Container Services), eliminando la necesidad de aprovisionar y administrar servidores.
-AWS Copilot: Herramienta de línea de comandos (CLI) que permite  desplegar y administrar fácilmente aplicaciones con contenedores en AWS sin tener que preocuparnos por la infraestructura.
+https://carbon.now.sh/?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523Actualizacion%2520de%2520paqueres%250Asudo%2520yum%2520update%2520-y%2520%250A%250A%2523Instalacion%2520de%2520docker%2520en%2520instancia%2520EC2%250Asudo%2520yum%2520install%2520docker%2520-y%250A%250A%2523Iniciar%2520servicio%2520docker%250Asudo%2520service%2520docker%2520start%250A%250A%2523Comprobacion%2520de%2520instalacion%2520de%2520docker%250Adocker%2520--version
+
+
 
 
 
