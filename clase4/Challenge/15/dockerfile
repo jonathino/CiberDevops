@@ -1,0 +1,4 @@
+FROM httpd:alpine
+
+
+RUN touch /usr/src/test.txt

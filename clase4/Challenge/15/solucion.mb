@@ -1,0 +1,16 @@
+- Documentación
+
+Para desarrollar este proyecto debemos partir del desarrollo el cual esta basado en html, javascript y css.
+
+Para el desarrollo de este proyecto utilizamos los siguientes servicios tipo serveless de aws
+
+Aws Fargate: servicio tipo serveless para ejectuar contenedores en ECS (Elastic Container Services), eliminando la necesidad de aprovisionar y administrar servidores.
+AWS Copilot: Herramienta de línea de comandos (CLI) que permite  desplegar y administrar fácilmente aplicaciones con contenedores en AWS sin tener que preocuparnos por la infraestructura.
+
+
+
+
+
+- Print de Pantalla de la solución
+- Dockerfile
+- Docker-compose
