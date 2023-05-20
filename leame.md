@@ -1,6 +1,7 @@
 # Tener en cuenta:
 
 + Crear una rama con la siguiente estructura
+
 **nombre+primera letra apellido**
 
 ejemplo: jonathanv
