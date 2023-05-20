@@ -1,4 +1,2 @@
-FROM httpd:alpine
-
-
-RUN touch /usr/src/test.txt
+FROM httpd:latest
+COPY ./buscaminas/ /usr/local/apache2/htdocs/
