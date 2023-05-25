@@ -1,4 +1,3 @@
-
 # Solución Lab 06
 
 ## 1. Crear Dockerfile 
@@ -42,3 +41,19 @@
 
 [![Dockerhub.png](https://i.postimg.cc/7hY8jCLk/Dockerhub.png)](https://postimg.cc/FdqBLHcW)
 
+
+## Solucion Alternativa 
+
+- crear la imagen sin agregar port=5000 en el File app.py 
+
+
+[![Solucion-a.png](https://i.postimg.cc/gkmHFVdR/Solucion-a.png)](https://postimg.cc/K4pMtg1v)
+
+## Correr contenedor 
+
+- Correr contenedor remapeando a otro puerto 
+
+- Docker run -d -p 8000:5000 poke-lab6 
+
+
+[![localhost8000.png](https://i.postimg.cc/26YVbx07/localhost8000.png)](https://postimg.cc/DWC2R1kS)
