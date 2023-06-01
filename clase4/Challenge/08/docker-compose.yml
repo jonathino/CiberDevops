@@ -1,0 +1,27 @@
+version: '3'
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 8080:80
+    networks:
+      - py-redis-nw
+    depends_on:
+      - redis
+    links:
+      - redis
+      
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+    networks:
+      - py-redis-nw
+
+networks:
+  py-redis-nw:
+   driver: bridge 
