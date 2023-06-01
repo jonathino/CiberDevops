@@ -37,6 +37,8 @@
 
 *   docker image inspect simple-nginx -f '{{.RootFS.Layers}}' - Inspecciona las capas:
 
+    Aquí veremos en detalle, las capas que contienen las instrucciones del Dockerfile
+
     [![4-8.png](https://i.postimg.cc/y8KyBhRY/4-8.png)](https://postimg.cc/7fB2n2Xp)
 
 
